@@ -1,11 +1,10 @@
-
 def rem(l, word):
     n = []
     for item in l:
-        if item != word:  # Exclude the specified word
-            n.append(item)
-    return n  # Return the list after checking all items
+     if not(item == word):
+        n.append(item.strip(word))
+        return  n
 
-l = ["Harry", "arsalan", "billo", "gemini"]
-print(rem(l, "arsalan"))
+l = ["Harry", "Bill", "steve", "Linus"]
 
+print(rem(l, "linus"))  
