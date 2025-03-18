@@ -7,8 +7,9 @@ if __name__ == '__main__':
         if x =="q":
             os.system("espeak -s 130 'bye bye friend'")
             break
-        command = f'espeak -s 120 "{x}"'
+        command = f'espeak -s 130 "{x}"'
         os.system(command)
+
 
 
 
